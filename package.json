@@ -1,0 +1,21 @@
+{
+  "name": "checkmail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.6.1",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.4",
+    "nodemon": "^3.1.10"
+  }
+}
