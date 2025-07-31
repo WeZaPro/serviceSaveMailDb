@@ -43,7 +43,8 @@ async function fetchAndProcessEmails() {
       imap.openBox("INBOX", false, (err, box) => {
         if (err) return reject(err);
 
-        imap.search(["UNSEEN"], (err, results) => {
+        // imap.search(["UNSEEN"], (err, results) => {
+        imap.search(["ALL"], (err, results) => {
           if (err || !results || results.length === 0) {
             console.log("📭 No new mail.");
             imap.end();
