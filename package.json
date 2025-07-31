@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon server.js",
     "start": "fuser -k 3000/tcp || true && node server.js",
     "build": "npm install"
   },

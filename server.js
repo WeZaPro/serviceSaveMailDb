@@ -199,6 +199,10 @@ app.get("/run-fetch-email", async (req, res) => {
   }
 });
 
+app.get("/test", (req, res) => {
+  res.send("✅ Hello from Node.js");
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
